@@ -1,0 +1,13 @@
+i {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    &.cart {
+        background-image: url("/images/icon-cart.svg");
+        width: 16px;
+        height: 16px;
+    }
+}

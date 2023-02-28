@@ -1,0 +1,83 @@
+
+@use "mq" as *;
+
+.container {
+    max-width: 765px;
+    width: 100%;
+    margin: 10% auto;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 2rem;
+    overflow: hidden;
+    background: $White;
+    @include mq($until: mobile) {
+        margin: 0;
+            }
+    &__box {
+        width: 50%;
+        @include mq($until: mobile) {
+            width: 100%;
+          }
+        &--right {
+            // padding: 4rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .mobile{
+            display: none;
+            @include mq($until: mobile) {
+                display: block;
+              }
+        }
+        .desktop {
+            display: block;
+            @include mq($until: mobile) {
+                display: none;
+              }
+        }
+        .price {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            margin: 20px 0;
+            p {
+                text-decoration: line-through;
+            }
+        }
+        .btn {
+            width: 100%;
+            padding: 15px 0;
+            border-radius: 10px;
+            outline: none;
+            font-size: 16px;
+            font-weight: 700;
+            border: none;
+            background: $Dark-cyan;
+            color: $White;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            &:hover {
+                box-shadow: 0 0 5px $Dark-cyan;
+            }
+        }
+        .right{
+            width: 80%;
+            height: 90%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            @include mq($until: mobile) {
+                margin: 10% auto;
+              }
+              
+        }
+    }
+}

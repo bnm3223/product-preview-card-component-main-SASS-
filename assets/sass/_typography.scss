@@ -1,0 +1,20 @@
+@import "variable";
+@import "mixin";
+span,
+p {
+    font-size: 14px;
+    @include Montserrat(500);
+    color: $Dark-grayish-blue;
+}
+h1 {
+    @include Fraunces;
+}
+h4 {
+    @include Montserrat(500);
+    color: $Dark-grayish-blue;
+    letter-spacing: 5px;
+}
+h2 {
+    @include Fraunces;
+    color: $Dark-cyan;
+}

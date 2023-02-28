@@ -1,0 +1,10 @@
+@import "variable";
+@mixin Montserrat($font-weight) {
+    font-family: $Montserrat;
+    font-weight: $font-weight;
+}
+@mixin Fraunces {
+    font-family: $Fraunces;
+    font-weight: 700;
+}
+
